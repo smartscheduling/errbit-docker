@@ -5,6 +5,7 @@ MAINTAINER Brian Olsen <brian@maven-group.org>
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential curl git
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2 libxml2-dev libxslt-dev libcurl4-openssl-dev
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 
 # Install ruby
 RUN git clone https://github.com/sstephenson/ruby-build.git /usr/local/ruby-build
